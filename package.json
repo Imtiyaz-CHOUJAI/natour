@@ -1,0 +1,22 @@
+{
+  "name": "natour",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass scss/main.scss css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Imtiyaz-CHOUJAI/natour.git"
+  },
+  "author": "Imtiyaz-CHOUJAI",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Imtiyaz-CHOUJAI/natour/issues"
+  },
+  "homepage": "https://github.com/Imtiyaz-CHOUJAI/natour#readme",
+  "devDependencies": {
+    "node-sass": "^4.9.4"
+  }
+}
