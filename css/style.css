@@ -50,15 +50,15 @@ body {
   margin-bottom: 6rem; }
   .primary-heading .first {
     display: block;
-    font-size: 3.5rem;
+    font-size: 8rem;
     font-weight: 400;
     letter-spacing: 2rem;
     animation: inFromLeft 1s ease-in; }
   .primary-heading .second {
     display: block;
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: 700;
-    letter-spacing: 1.3rem;
+    letter-spacing: 1rem;
     animation: inFromRight 1s ease-in; }
 
 .secondary-heading {
@@ -73,11 +73,27 @@ body {
   .secondary-heading:hover {
     transform: skew(10deg, 2deg) scale(1.1); }
 
+.tertiary-heading {
+  font-size: 1.6rem;
+  font-weight: 700px;
+  text-transform: uppercase; }
+
+.paragraph {
+  font-size: 1.6rem; }
+  .paragraph:not(:last-child) {
+    margin-bottom: 2rem; }
+
 .u-text-center {
   text-align: center; }
 
-.u-margin-bottom-8 {
+.u-margin-bottom-big {
   margin-bottom: 8rem; }
+
+.u-margin-bottom-medium {
+  margin-bottom: 4rem; }
+
+.u-margin-bottom-small {
+  margin-bottom: 2rem; }
 
 .btn:link, .btn:visited {
   text-decoration: none;
@@ -121,10 +137,82 @@ body {
   animation: inFromBottom .5s ease-out .75s;
   animation-fill-mode: backwards; }
 
+.btn-text:link, .btn-text:visited {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: #55c57a;
+  border-bottom: 1px solid #55c57a;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+  margin-bottom: 3px;
+  transition: all .2s ease-in-out;
+  padding: 1rem 2rem; }
+
+.btn-text:hover {
+  background-color: #55c57a;
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.15); }
+
+.btn-text:active {
+  transform: translateY(0px);
+  box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.15); }
+
+.composition {
+  position: relative; }
+  .composition__photo {
+    width: 55%;
+    position: absolute;
+    box-shadow: 0 1rem 2rem 0.4rem rgba(0, 0, 0, 0.2);
+    transition: all .2s;
+    z-index: 10;
+    outline-offset: 1rem;
+    border-radius: 2px; }
+    .composition__photo--1 {
+      top: -2rem;
+      left: 0; }
+    .composition__photo--2 {
+      top: 2rem;
+      right: 0; }
+    .composition__photo--3 {
+      top: 8rem;
+      left: 20%; }
+    .composition__photo:hover {
+      outline: 1rem solid #55c57a;
+      transform: translateY(-2rem) scale(1.05);
+      box-shadow: 0 1rem 2rem 0.4rem rgba(0, 0, 0, 0.4);
+      z-index: 20; }
+  .composition:hover .composition__photo:not(:hover) {
+    transform: scale(0.95); }
+
+.feature-box {
+  background: rgba(255, 255, 255, 0.8);
+  padding: 2.5rem;
+  text-align: center;
+  box-shadow: 0 1rem 2rem 0.4rem rgba(0, 0, 0, 0.2);
+  transition: all .2s; }
+  .feature-box__icon {
+    font-size: 6rem;
+    background-image: linear-gradient(to right, #7ed56f, #28b485);
+    color: transparent;
+    -webkit-background-clip: text; }
+  .feature-box:hover {
+    transform: translateY(-2rem) scale(1.05); }
+
 .about-section {
   background-color: #f7f7f7;
   padding: 25rem 0;
   margin-top: -20vh; }
+
+.featured-section {
+  background-image: linear-gradient(to right, rgba(85, 197, 122, 0.8), rgba(40, 180, 133, 0.8)), url(../img/nat-4.jpg);
+  background-size: cover;
+  background-position: top;
+  padding: 25rem 0;
+  margin-top: -10rem;
+  transform: skewY(-7deg); }
+  .featured-section > * {
+    transform: skewY(7deg); }
 
 .header {
   height: 95vh;
@@ -155,27 +243,27 @@ body {
   max-width: 114rem;
   margin: 0 auto; }
   .row:not(:last-child) {
-    margin-bottom: 6rem; }
+    margin-bottom: 8rem; }
 
 [class^='col-'] {
   float: left; }
   [class^='col-']:not(:last-child) {
-    margin-right: 4rem; }
+    margin-right: 6rem; }
 
 .col-1-of-2 {
-  width: calc((100% - 4rem) / 2); }
+  width: calc((100% - 6rem) / 2); }
 
 .col-1-of-3 {
-  width: calc((100% - 2*4rem) / 3); }
+  width: calc((100% - 2*6rem) / 3); }
 
 .col-2-of-3 {
-  width: calc( 2* ((100% - 2*4rem) / 3) + 4rem); }
+  width: calc( 2* ((100% - 2*6rem) / 3) + 6rem); }
 
 .col-1-of-4 {
-  width: calc((100% - 3*4rem) / 4); }
+  width: calc((100% - 3*6rem) / 4); }
 
 .col-2-of-4 {
-  width: calc( 2* ((100% - 3*4rem) / 4) + 4rem); }
+  width: calc( 2* ((100% - 3*6rem) / 4) + 6rem); }
 
 .col-3-of-4 {
-  width: calc( 3* ((100% - 3*4rem) / 4) + 2*4rem); }
+  width: calc( 3* ((100% - 3*6rem) / 4) + 2*6rem); }

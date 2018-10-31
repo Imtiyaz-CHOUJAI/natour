@@ -6,7 +6,7 @@
     
     .first {
         display: block;
-        font-size: 3.5rem;
+        font-size: 8rem;
         font-weight: 400;
         letter-spacing: 2rem;
         animation: inFromLeft 1s ease-in;
@@ -14,9 +14,9 @@
     
     .second {
         display: block;    
-        font-size: 1.5rem;
+        font-size: 2rem;
         font-weight: 700;
-        letter-spacing: 1.3rem;
+        letter-spacing: 1rem;
         animation: inFromRight 1s ease-in;
     }
 }
@@ -33,5 +33,19 @@
 
     &:hover {
       transform: skew(10deg, 2deg) scale(1.1);  
+    }
+}
+
+.tertiary-heading {
+    font-size: $default-size;
+    font-weight: 700px;
+    text-transform: uppercase;
+}
+
+.paragraph {
+    font-size: $default-size;
+    
+    &:not(:last-child) {
+        margin-bottom: 2rem;
     }
 }

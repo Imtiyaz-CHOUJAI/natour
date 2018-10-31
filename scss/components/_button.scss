@@ -47,3 +47,30 @@
         animation-fill-mode: backwards;
     }
 }
+
+.btn-text {
+    &:link,
+    &:visited {
+        display: inline-block;
+        text-decoration: none;
+        font-size: $default-size;
+        color: $primary-color;
+        border-bottom: 1px solid $primary-color;
+        box-shadow: 0 1rem 2rem rgba($black-color, .15);
+        margin-bottom: 3px;
+        transition: all .2s ease-in-out;
+        padding: 1rem 2rem;
+    }
+
+    &:hover {
+        background-color: $primary-color;
+        color: $white-color;
+        transform: translateY(-2px);
+        box-shadow: 0 2rem 2rem rgba($black-color, .15);        
+    }
+
+    &:active {
+        transform: translateY(0px);
+        box-shadow: 0 2rem 2rem rgba($black-color, .15);        
+    }
+}
