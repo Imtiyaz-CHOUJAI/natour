@@ -25,3 +25,32 @@
     padding: 25rem 0;
     margin-top: -10rem;
 }
+.tours-section {
+    padding: 15rem 0;
+    position: relative;
+}
+.booking-section {
+    padding: 15rem 0;
+    background-image: linear-gradient( 
+        to right bottom,
+        rgba($light-primary-color, 0.8),
+        rgba($dark-primary-color, 0.8) 
+    );
+}
+.book {
+    background-image: linear-gradient( 
+        105deg,
+        rgba($white-color, 0.9) 0%,
+        rgba($white-color, 0.9) 50% ,
+        transparent 50%
+    ), url('../img/nat-10.jpg');
+    background-size: cover;
+    border-radius: 3px;
+    box-shadow: 0 1.5rem 4rem rgba($black-color, 0.2);
+    height: 50rem ;
+
+    &__form {
+        width: 50%;
+        padding: 5rem;
+    }
+}
