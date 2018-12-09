@@ -7,6 +7,10 @@
     &:not(:last-child) {
         margin-bottom: $v-gutter;
     }
+    
+    @include respond(tab-port) {
+        max-width: 50rem !important;
+    }
 }
 
 [class^='col-'] {
@@ -14,6 +18,15 @@
 
     &:not(:last-child) {
         margin-right: $h-gutter;
+
+        @include respond(tab-port) {
+            margin-right: 0;
+            margin-bottom: 2rem;
+        }
+    }
+
+    @include respond(tab-port) {
+        width: 100% !important;
     }
 }
 
